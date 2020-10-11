@@ -39,7 +39,7 @@ ax.plot_surface(xi,yi,zi)
 ax.scatter3D(x,y,z)
 plt.show()
 
-# trangulate parameter space
+# triangulate parameter space
 tri = Delaunay(np.array([xi,yi]).T[0])
 
 fig = plt.figure()
