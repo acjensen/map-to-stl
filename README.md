@@ -22,13 +22,13 @@ ax_trisurf.show()
 ```
 
 ### Thin-Plate-Spline interpolated mesh with original points in red
-![Mesh](mesh_interp.PNG)
+![Mesh](/doc/mesh_interp.PNG)
 
 ### Delauny-triangulated mesh in preparation for .stl generation
-![Mesh](mesh_tri.PNG)
+![Mesh](/doc/mesh_tri.PNG)
 
 ### Final .stl mesh
-![Mesh](mesh.PNG)
+![Mesh](/doc/mesh.PNG)
 
 ## Installation
 
