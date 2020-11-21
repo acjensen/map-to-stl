@@ -33,5 +33,5 @@ map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
 ![Mesh](/doc/mesh_tri.png)
 
 ### Final .stl mesh
-![Mesh](/doc/mesh.png)
+![Mesh](/doc/mesh_stl.png)
 
