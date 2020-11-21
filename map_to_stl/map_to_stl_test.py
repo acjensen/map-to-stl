@@ -13,7 +13,7 @@ class MapToStlTest(TestCase):
         y_axis = np.arange(1, 8, 1)
 
         # Define a rough surface using randomly generated points
-        num_points = 4
+        num_points = 10
         x = x_axis[0] + (np.random.random(num_points)
                          * (x_axis[-1] - x_axis[0]))
         y = y_axis[0] + (np.random.random(num_points)
