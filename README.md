@@ -33,4 +33,4 @@ map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
 
 1. Clone this repo add it to your path
 2. Install dependencies with `pip install requirements.txt`
-3. Run the function `map_to_stl` in `map_to_stl.py`
+3. Call the function `map_to_stl` in `map_to_stl.py`
