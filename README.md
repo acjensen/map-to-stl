@@ -21,13 +21,13 @@ map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
 ```
 
 ### Thin-Plate-Spline interpolated mesh with original points in red
-![Mesh](/doc/mesh_interp.PNG)
+![Mesh](/doc/mesh_interp.png)
 
 ### Delauny-triangulated mesh in preparation for .stl generation
-![Mesh](/doc/mesh_tri.PNG)
+![Mesh](/doc/mesh_tri.png)
 
 ### Final .stl mesh
-![Mesh](/doc/mesh.PNG)
+![Mesh](/doc/mesh.png)
 
 ## Installation
 
