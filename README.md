@@ -1,9 +1,10 @@
 ## Introduction
 
-The single function `map_to_stl` interpolates a mesh from a set of 3D coordinates that define a 'map' (a function of two inputs `z = f(x,y)` ) using the Thin-Plate Spline method. The mesh is saved to a standard 3D-printable .stl (STereo-Lithography) file.
+The function `map_to_stl(...)` interpolates a set of 3D coordinates using the [Thin-Plate-Spline](https://en.wikipedia.org/wiki/Thin_plate_spline) method to define a 'map' (`z = f(x,y)`). A mesh is created from the map using [Delauny Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) and is saved to a standard 3D-printable .stl (STereo-Lithography) file.
 
 ## Example
 ```python
+from map_to_stl import map_to_stl
 
 # Define map axes
 x_axis = np.arange(1, 10, 1)
@@ -16,9 +17,7 @@ y = y_axis[0] + (np.random.random(num_points) * (y_axis[-1] - y_axis[0]))
 z = np.random.random(num_points) * 3
 
 # Generate a mesh from the points and save to `mesh.stl`
-ax_interp, ax_trisurf = map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
-ax_interp.show()
-ax_trisurf.show()
+map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
 ```
 
 ### Thin-Plate-Spline interpolated mesh with original points in red
