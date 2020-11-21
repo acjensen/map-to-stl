@@ -1,6 +1,6 @@
 ## Introduction
 
-The function `map_to_stl(...)` interpolates a set of 3D coordinates using the [Thin-Plate-Spline](https://en.wikipedia.org/wiki/Thin_plate_spline) method to define a 'map' (`z = f(x,y)`). A mesh is created from the map using [Delauny Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) and is saved to a standard 3D-printable .stl (STereo-Lithography) file.
+The function `map_to_stl(...)` interpolates a set of 3D coordinates using the [Thin-Plate-Spline](https://en.wikipedia.org/wiki/Thin_plate_spline) method to define a 'map' `z = f(x,y)`. A mesh is created from the map using [Delauny Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) and is saved to a standard 3D-printable .stl (STereo-Lithography) file.
 
 ## Example
 ```python
