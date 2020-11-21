@@ -2,6 +2,12 @@
 
 The function `map_to_stl(...)` interpolates a set of 3D coordinates using the [Thin-Plate-Spline](https://en.wikipedia.org/wiki/Thin_plate_spline) method to define a 'map' `z = f(x,y)`. A mesh is created from the map using [Delauny Triangulation](https://en.wikipedia.org/wiki/Delaunay_triangulation) and is saved to a standard 3D-printable .stl (STereo-Lithography) file.
 
+## Installation
+
+1. Clone this repo add it to your path
+2. Install dependencies with `pip install requirements.txt`
+3. Call the function `map_to_stl(...)` in `map_to_stl.py`
+
 ## Example
 ```python
 from map_to_stl import map_to_stl
@@ -29,8 +35,3 @@ map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
 ### Final .stl mesh
 ![Mesh](/doc/mesh.png)
 
-## Installation
-
-1. Clone this repo add it to your path
-2. Install dependencies with `pip install requirements.txt`
-3. Call the function `map_to_stl` in `map_to_stl.py`
