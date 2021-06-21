@@ -4,9 +4,10 @@ The function `map_to_stl(...)` interpolates a set of 3D coordinates using the [T
 
 ## Installation
 
-1. Clone this repo add it to your path
-2. Install dependencies with `pip install requirements.txt`
-3. Call the function `map_to_stl(...)` in `map_to_stl.py`
+1. Clone this repo add it to your path.
+2. Install `python3`.
+3. Install dependencies with `pip install requirements.txt`.
+4. Call the function `map_to_stl(...)` in `map_to_stl.py`.
 
 ## Example
 ```python
