@@ -25,12 +25,12 @@ def map_to_stl(x_axis, y_axis, x, y, z, output_filename=None, show_plots=True):
     assert np.logical_and(y > min(y_axis), y < max(
         y_axis)).all(), " Coordinates must lie within the axes bounds"
 
-    # Interpolate between points using the thin plate spline algorithm
+    # Interpolate between points using the thin plate spline algorithm.
     interp = interpolate.Rbf(x, y, z, function='thin_plate')
     xi, yi = np.meshgrid(x_axis, y_axis)
     zi = interp(xi, yi)
 
-    # Plot the initial interpolated surface
+    # Plot the initial interpolated surface.
     fig = plt.figure()
     ax_interp = axes3d.Axes3D(fig)
     ax_interp.plot_surface(xi, yi, zi, alpha=0.5)
@@ -38,13 +38,11 @@ def map_to_stl(x_axis, y_axis, x, y, z, output_filename=None, show_plots=True):
     if show_plots:
         plt.show()
 
-    # Create the mesh
-
-    # Triangulate the parameter space
+    # Begin mesh creation by triangulating the parameter space.
     points = np.array([xi.flatten(), yi.flatten()]).T
     tri = Delaunay(points)
 
-    # Plot the triangulated surface
+    # Plot the triangulated surface.
     fig = plt.figure()
     ax_trisurf = axes3d.Axes3D(fig)
     ax_trisurf.plot_trisurf(xi.flatten(), yi.flatten(), zi.flatten(),
@@ -52,7 +50,7 @@ def map_to_stl(x_axis, y_axis, x, y, z, output_filename=None, show_plots=True):
     if show_plots:
         plt.show()
 
-    # Save result to a .stl file
+    # Save result to a .stl file.
     if output_filename:
 
         vertices = points = np.array(
