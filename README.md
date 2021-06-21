@@ -13,17 +13,17 @@ The function `map_to_stl(...)` interpolates a set of 3D coordinates using the [T
 ```python
 from map_to_stl import map_to_stl
 
-# Define map axes
+# Define map axes.
 x_axis = np.arange(1, 10, 1)
 y_axis = np.arange(1, 8, 1)
 
-# Define randomly generated points (x,y,z) within the axes
+# Define randomly generated points (x,y,z) within the axes.
 num_points = 4
 x = x_axis[0] + (np.random.random(num_points) * (x_axis[-1] - x_axis[0]))
 y = y_axis[0] + (np.random.random(num_points) * (y_axis[-1] - y_axis[0]))
 z = np.random.random(num_points) * 3
 
-# Generate a mesh from the points and save to `mesh.stl`
+# Generate a mesh from the points and save to `mesh.stl`.
 map_to_stl(x_axis, y_axis, x, y, z, 'mesh.stl')
 ```
 
